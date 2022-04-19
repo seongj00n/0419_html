@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성준</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        * {text-decoration: none;}
+        #sub {width:1100px; height:720px; margin:50px auto 30px; padding:30px;}
+        #submenu {width:100%; height:50px; }
+        #contents {width:100%; height:620px; }
+        #sub > #contents > #pro > a > img {width:100%; height:100%;}
+        #sub > #contents > #pro > a > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02); }
+        #sub > #contents > #pro1 > a > img {width:100%; height:100%;}
+        #sub > #contents > #pro1 > a > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02); }
+        #sub > #contents > #pro2 > a > img {width:100%; height:100%;}
+        #sub > #contents > #pro2 > a > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02); }
+        #sub > #contents > #pro3 > a > img {width:100%; height:100%;}
+        #sub > #contents > #pro3 > a > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02); }
+
+        #pro {width:550px; height:440px;  float: left; margin:10px 0 0 0px; overflow: hidden;}
+        #pro1 {width:140px; height:140px; float: left; margin:475px 0 0 -550px; overflow: hidden;}
+        #pro2 {width:140px; height:140px;  float: left; margin:475px 0 0 -390px; overflow: hidden;}
+        #pro3 {width:140px; height:140px;  float: left; margin:475px 0 0 -230px; overflow: hidden;}
+
+        #context {width:450px; height:620px;  float: right; margin:0px 0 0 0px;}
+        #context > h3 {margin:20px; }
+
+        table {width:100%; border-top:1px solid rgb(117, 116, 116);}
+        td {padding:11px 20px;}
+        td:first-child {width:180px; }
+        select {width:400px; height:50px;}
+
+        button > img {width:100%; height:100%;}
+
+        button {margin:10px 0 0 1px; cursor:pointer; width:200px; height:50px;}
+        button:first-child {background-color: rgb(131, 95, 95); border-radius:3px; padding:10px 20px; color:#fff;}
+        button:nth-child(2) {background-color: rgb(131, 95, 95); border-radius:3px; padding:10px 20px; color:#fff;}
+        button:nth-child(3) {background-color: rgb(131, 95, 95); border-radius:3px; padding:0; color:#fff; width:131px; height:50px;}
+        button:nth-child(4) {background-color: rgb(131, 95, 95); border-radius:3px; padding:0; color:#fff; width:131px; height:50px;}
+        button:nth-child(5) {background-color: rgb(131, 95, 95); border-radius:3px; padding:0; color:#fff; width:131px; height:50px;}
+
+        #mode {width:1000px; height:250px;  margin:80px auto 10px; border:1px solid rgb(161, 161, 161);}
+        #mode > h3 {margin:5px 0 0 20px;}
+        #mode1 {width:180px; height:220px;  margin:8px 0 0 13px; display:inline-block; overflow: hidden;}
+        #mode1 > a > img {width:100%; height:140px;}
+        #mode1 > a {text-decoration: none;}
+        #mode1 > a > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02);}
+        #mode1 > a > h6 {text-align:center; font-size: 13px; color:black;}
+        #mode1 > a > p {text-align:center; font-size: 9px; margin:3px 0 0 0px; color: black;}
+
+        #shipping > ul {width:1200px; height:50px; margin:100px auto 30px; color:black;}
+        #shipping > ul > li {width:280px; height:100%; float:left; display:block; text-align: center; padding:15px 0 0 0px;
+        border:2px solid rgb(0, 0, 0); font-size: 13px; margin:0px auto 0px;}
+        #shipping > ul > li:not(:first-of-type) {border:1px solid rgb(153, 153, 153); background-color: rgb(235, 235, 235); }
+        #shipping > ul > li:first-of-type {border-bottom: none; color: black;}
+
+        #shop {width:1200px; height:2000px; margin:70px auto 10px; background-color: aqua;}
+        #imgbox {width:1100px; height:400px; margin:0px auto 10px; overflow: hidden;}
+        #imgbox > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02);}
+        #shop > h1 {text-align: center;}
+        #imgbox > img {width:100%; height:100%; }
+
+        #imgbox2 {width:1100px; height:60px; margin:10px auto 10px; }
+        #shop >  #imgbox2 > h2 {text-align: center; font-size: 23px; margin: 30px auto 5px;}
+        #imgbox2 > p {text-align: center; font-size: 14px; margin: 0px auto 0px;}
+
+        #shop3 {width:1100px; height:130px; margin:100px auto 0px;}
+        #shop3 > h2 {text-align: center; margin:50px auto 10px;}
+        #shop3 > p {text-align: center; font-size:14px; margin:0px auto 0px;}
+
+        #imgbox3 {width:1100px; height:400px; margin:0px auto 10px; overflow: hidden;}
+        #imgbox3 > img {width: 100%; height: 100%;}
+        #imgbox3 > img:hover {opacity: 0.8; transition:all 0.5s; transform:scale(1.02);}
+
+        
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div id="login">
+            <div class="shop">
+                <ul>
+                    <li><a href="#">쇼핑몰</a></li>
+                    <li>|</li>
+                    <li><a href="#">북마크</a></li>
+                    <li>|</li>
+                    <li><a href="#">카톡상담</a></li>
+                </ul>
+            </div>
+
+            <div class="shop1">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">추가메뉴</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="logo">
+
+            <img src="img/rogo.jpg"
+                alt="로고">
+        </div>
+
+
+        <div id="nav">
+            <ul>
+                <li><a href="#">GATEGORY</a></li>
+                <li>|</li>
+                <li><a href="#">최신상품</a></li>
+                <li>|</li>
+                <li><a href="#">베스트상품</a></li>
+                <li>|</li>
+                <li><a href="#">기획전</a></li>
+                <li>|</li>
+                <li><a href="#">할인상품</a></li>
+                <li>|</li>
+                <li><a href="#">쿠폰존</a></li>
+                <li>|</li>
+                <li><a href="#">카톡상담</a></li>
+            </ul>
+
+            <div class="icon">
+                <ul>
+                    <li><a href="#"><img
+                                src="img/icon3.webp"
+                                alt="아이콘"></a></li>
+                    <li><a href="#"><img
+                                src="img/icon2.webp"
+                                alt="아이콘1"></a></li>
+                    <li><a href="#"><img
+                                src="img/icon1.webp"
+                                alt="아이콘2"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <div id="nav1">
+            <ul>
+                <li><a href="#"><b>맞춤액자</b></a></li>
+                <li><a href="#"><b>맞춤거울</b></a></li>
+                <li><a href="#"><b>맞춤십자수액자</b></a></li>
+                <li><a href="#"><b>맞춤캔버스액자</b></a></li>
+                <li><a href="#"><b>맞춤아크릴액자</b></a></li>
+                <li><a href="#"><b>갤러리포토+액자</b></a></li>
+                <li><a href="#"><b>벽인테리어</b></a></li>
+                <li><a href="#"><b>액자</b></a></li>
+                <li><a href="#"><b>거울</b></a></li>
+                <li><a href="#"><b>벽걸이시계</b></a></li>
+            </ul>
+
+        </div>
+
+
+    </header>
+
+    <subbox>
+        <div id="sub">
+            <div id="submenu">
+                <h4>HOME > 인테리어·액자 > 라미나/액자</h4>
+            </div>
+            <div id="contents">
+                <div id="pro">
+                    <a href="#"><img src="img/sub1.jpg" alt="사진1"></a>
+                </div>
+
+                <div id="pro1">
+                    <a href="#"><img src="img/sub2.png" alt="사진2"></a>
+                </div>
+                <div id="pro2">
+                    <a href="#"><img src="img/sub3.jpg" alt="사진3">
+                    </a></div>
+                <div id="pro3">
+                    <a href="#"><img src="img/sub4.png" alt="사진4"></a>
+                </div>
+
+                <div id="context">
+                    <h3>아크릴 자작나무액자</h3>
+                    <table>
+                        <tr>
+                            <td><b>짧은 설명</b></td>
+                            <td>친환경 자작나무의 고급스러움</td>
+                        </tr>
+                        <tr>
+                            <td><b>판매가</b></td>
+                            <td>59,900원</td>
+                        </tr>
+                        <tr>
+                            <td><b>적립 마일리지</b></td>
+                            <td>980원</td>
+                        </tr>
+                        <tr>
+                            <td><b>배송비</b></td>
+                            <td>0원</td>
+                        </tr>
+                        <tr>
+                            <td><b>상품코드</b></td>
+                            <td>AE5021WZ12</td>
+                        </tr>
+                        <tr>
+                            <td><b>인증번호</b></td>
+                            <td>1680EA-333</td>
+                        </tr>
+                        <tr>
+                            <td><b>브랜드</b></td>
+                            <td>좋은액자</td>
+                        </tr>
+                    </table>
+                    <table>
+                        
+                        <tr>
+                            <td style="text-align:center";><b>액자 사이즈 선택</b></td>   
+                        </tr>
+
+                        <tr>
+                            <td style="text-align:center";>
+                                <select name="select" id="select">
+                                    <option>사이즈 선택하기</option>
+                                    <option>액자:8*10cm</option>
+                                    <option>액자:12*18cm</option>
+                                    <option>액자:17*25cm</option>
+                                    <option>액자:24*31cm</option>
+                                    <option>액자:30*50cm</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button>구매하기</button>
+                                <button>장바구니</button>
+                                <button><img src="img/icon4.png" alt="카카오"></button>
+                                <button><img src="img/icon5.jpg" alt="카카오"></button>
+                                <button><img src="img/icon6.jpg" alt="카카오"></button>
+                            </td>  
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </subbox>
+
+    <div id="mode">
+        <h3>BEST ITEM</h3>
+        <div id="mode1">
+            <a href="#"><img src="img/sub5.jpg"></a>
+            <a href="#"><h6>원목액자</h6></a>
+            <a href="#"><p>어느곳에나 멋스러운 <br>홈스타일링의 필수템</p></a>
+        </div>
+        <div id="mode1">
+            <a href="#"><img src="img/sub6.jpg" alt="박스이미지"></a>
+            <a href="#"><h6>메탈액자</h6></a>
+            <a href="#"><p>공간의 압도하는 메탈 <br>고유의 자체발광 매력</p></a>
+        </div>
+        <div id="mode1">
+            <a href="#"><img src="img/sub7.jpg" alt="박스이미지"></a>
+            <a href="#"><h6>프리미엄 아크릴액자</h6></a>
+            <a href="#"><p>품격있는 액자로 <br>사이즈업그레이드</p></a>
+        </div>
+        <div id="mode1">
+            <a href="#"><img src="img/sub8.jpg" alt="박스이미지"></a>
+            <a href="#"><h6>보드액자</h6></a>
+            <a href="#"><p>궁극의 가벼움<br>심플한 인테리어</p></a>
+        </div>
+        <div id="mode1">
+            <a href="#"><img src="img/sub9.jpg" alt="박스이미지"></a>
+            <a href="#"><h6>알루미늄 액자</h6></a>
+            <a href="#"><p>얇고 세련된 프레임으로<br> 감각적인 공간을 연출</p></a>
+        </div>
+    </div>
+
+        <div id="shipping">
+            <ul>
+                <li><b>상품상세정보</b></li>
+                <li><a href="#"><b>배송안내</b></a></li>
+                <li><a href="#"><b>이용자후기</b></a></li>
+                <li><a href="#"><b>상품문의</b></a></li>
+            </ul>
+        </div>
+
+    <div id="shop">
+        <h1><b>PREMIUM ACRYLIC</b></h1>
+        <div id="imgbox2">
+            <h2><b>아크릴 자작나무액자</b></h2>
+            <p>결이 살아있는 내추럴한 자작나무에 모던한 고광택 아크릴을 더해 갤러리에 온 듯한 분위기를 연출할 수 있어요.</p>    
+        </div>
+        <div id="imgbox">
+            <img src="img/main.jpg" alt="자작나무액자1">
+        </div>
+
+        <div id="shop3">
+            <h2><b>따뜻함과 심플함을<br>동시에 느낄 수 있어요</b></h2>
+            <p>자작나무의 따뜻함과 프레임리스의 심플함으로 달라진 분위기에<br>자꾸만 시선과 마음이 갈 거에요.</p>
+        </div>
+
+        <div id="imgbox3">
+            <img src="img/main2.jpg" alt="자작나무액자2">
+        </div>
+
+
+    </div>   
+    
+
+
+    <footer>
+        <div id="qwer">
+            <h3>100% 정품판매</h3>
+            <p>홈페이지에서 판매되는 모든 브랜드 제품은 정식제조, <br> 정식수입원을 통해 유통되는 100% 정품입니다.</p>
+            
+
+          <div class="footerbox"> 
+              <div class="footerbox2">
+            <div class="zzz">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    
+                    <li><a href="#">고객님의 따뜻한 한마디 감사합니다.</a></li>
+                    
+                    <li><a href="#">일반상담- AM 00:00 ~ PM 04:00</a></li>
+                    
+                    <li><a href="#">카카오상담- AM 00:00 ~ PM 04:00</a></li>
+                    
+                    <li><a href="#">점심시간-PM 12:00~ PM 01:00</a></li>
+                </ul>
+
+
+            </div>
+
+            <div class="zzz">
+                <ul>
+                    <li><a href="#">무통장 입금계좌</a></li>
+                    
+                    <li><a href="#">국민 00000-00-000000</a></li>
+                    
+                    <li><a href="#">농협 3551-00021-751300-00</a></li>
+                    
+                    <li><a href="#">예금주: (주)이성준 </a></li>
+                </ul>
+
+
+            </div>
+
+            <div class="zzz">
+                <ul>
+                    <li><a href="#">교환,반품안내</a></li>
+                    
+                    <li><a href="#">제품 배송중이나 제품자체의 하자가 있는 경우 절차를 안내해드립니다.</a></li>
+                    
+                    <li><a href="#">반품시 보내주실 주소</a></li>
+                    
+                    <li><a href="#">경기도 시흥시 정왕동 00000 00000</a></li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="zzz">
+                <ul>
+                    <li><a href="#">이용가이드</a></li>
+                    
+                    <li><a href="#">브랜드스토리</a></li>
+                    
+                    <li><a href="#">이벤트</a></li>
+                    
+                    <li><a href="#">협찬문의</a></li>
+                    
+                    <li><a href="#">배송문의</a></li>
+                    
+                    <li><a href="#">이용약관</a></li>
+                    
+                    <li><a href="#">개인정보취급방침</a></li>
+                </ul>
+
+            </div> 
+
+        </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
